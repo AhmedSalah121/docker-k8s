@@ -15,12 +15,12 @@ This module demonstrates how to containerize a Node.js server using Docker.
 
 1. Build the Docker image:
     ```bash
-    docker build -t nodejs-server .
+    docker build .
     ```
 
 2. Run the container:
     ```bash
-    docker run -p 3000:3000 nodejs-server
+    docker run -p 3000:3000 -d --rm <image-id>
     ```
 
 3. Access the server at `http://localhost:3000`.
