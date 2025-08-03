@@ -8,7 +8,7 @@ RUN npm install
 
 COPY . /app
 
-EXPOSE 80
+EXPOSE 3000
 
 # CMD: will run when the container is started
 CMD ["node",  "server.js"]
